@@ -1,0 +1,82 @@
+@CHARSET "ISO-8859-1";
+
+.alert {
+	
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+.xl {
+	background-color: #e0e0de;
+	margin: auto;
+	text-align: center;
+	width: 25%; /* Could be more or less, depending on screen size */
+	box-shadow: 0 0 5px 1px red;
+	-webkit-border-radius: 8px/7px;
+	-moz-border-radius: 8px/7px;
+	border-radius: 8px/7px;
+	border: solid 1px #cbc9c9;
+	padding-top: 10px;
+	padding-right: 13px;
+	padding-bottom: 13px;
+	padding-left: 13px;
+}
+
+/* .al {
+	background-color: #f1f1f1;
+	text-align: center;ing-top: 10px;ing-right: 13px;ing-bottom: 13px;
+	padding-left: 13px;
+} */
+
+#ok {
+	width: auto;
+	padding: 10px 18px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	background-color: rgba(128, 128, 192, .75);
+	color: white;
+	padding: 6px 25px 0px 20px;
+	margin: 10px 8px 20px 0px;
+	height: 40px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 0 3px rgb(128, 128, 192);
+	transition: all 0.1s linear 0s;
+	border: none;
+	top: 0px;
+	position: relative;
+}
+
+#ok:hover {
+	top: 2px;
+}
+
+#ok:active {
+	top: 6px;
+	box-shadow: none;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

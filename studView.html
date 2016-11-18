@@ -1,0 +1,12 @@
+<h1>Welcome! {{username}}</h1>
+
+<div id="tablecreate"></div>
+<table border="1">
+  <th ng-repeat="shelf in shelves">
+    <h2></h2>{{shelf.category}}</th>
+  <tr ng-repeat="i in getNumber(sLength) track by $index">
+    <td ng-repeat="shelf in shelves" ng-click="borrow(shelf.books[$parent.$index].id)" ng-class="{redStyle : shelf.books[$parent.$index].presence == 0, defaultStyle:  shelf.books[$parent.$index].presence == 1}">
+      {{shelf.books[$parent.$index].name}}
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="signPage.css">
+
+<div id="login">
+    <h1>Welcome! {{username}}</h1>
+    <hr>
+    <form id="loginForm" ng-submit="checkLogin()">
+        <label id="iconX1" for="username" class="iconClass">
+				<i class="fa fa-user"></i>
+			</label>
+        <input type="text" ng-model="username" name="username" id="username" placeholder="username" pattern="^(admin){1}$|^U{1}.*"
+            required title="Username should be admin or start with 'U'." />
+        <label id="iconX2" for="password" class="iconClass">
+				<i class="fa fa-shield"></i>
+			</label>
+        <input type="password" ng-model="password" name="password" id="password" placeholder="Password" autocomplete="off" required
+        />
+
+        <br /><br />
+        <p></p>
+        <button type="submit" id="log">Login</button>
+    </form>
+</div>
